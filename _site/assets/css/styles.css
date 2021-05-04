@@ -1,0 +1,7 @@
+.nav_link { -moz-appearance: button; -ms-appearance: button; -o-appearance: button; -webkit-appearance: button; text-decoration: none; color: black; padding: 16px 32px; margin: 4px 2px; display: inline-block; text-align: center; text-decoration: none; transition-duration: 0.4s; cursor: pointer; border: 2px solid #008CBA; border-radius: 5px; }
+
+.nav_link:hover { background-color: #008CBA; }
+
+.current { border: 2px solid #008CFF; background-color: #008CFF; }
+
+/*# sourceMappingURL=styles.css.map */

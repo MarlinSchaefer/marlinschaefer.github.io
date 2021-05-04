@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		".nav_link {\n    -moz-appearance: button;\n    -ms-appearance: button;\n    -o-appearance: button;\n    -webkit-appearance: button;\n    text-decoration: none;\n    color: black;\n    padding: 16px 32px;\n    margin: 4px 2px;\n    display: inline-block;\n    text-align: center;\n    text-decoration: none;\n    transition-duration: 0.4s;\n    cursor: pointer;\n    border: 2px solid #008CBA;\n    border-radius: 5px;\n}\n.nav_link:hover {\n    background-color: #008CBA;\n}\n.current {\n    border: 2px solid #008CFF;\n    background-color: #008CFF;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,SAAS,CAAC,EACN,eAAe,EAAE,MAAM,EACvB,cAAc,EAAE,MAAM,EACtB,aAAa,EAAE,MAAM,EACrB,kBAAkB,EAAE,MAAM,EAC1B,eAAe,EAAE,IAAI,EACrB,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,SAAS,EAClB,MAAM,EAAE,OAAO,EACf,OAAO,EAAE,YAAY,EACrB,UAAU,EAAE,MAAM,EAClB,eAAe,EAAE,IAAI,EACrB,mBAAmB,EAAE,IAAI,EACzB,MAAM,EAAE,OAAO,EACf,MAAM,EAAE,iBAAiB,EACzB,aAAa,EAAE,GAAG,GACrB;;AACD,AAAA,SAAS,CAAC,KAAK,CAAC,EACZ,gBAAgB,EAAE,OAAO,GAC5B;;AACD,AAAA,QAAQ,CAAC,EACL,MAAM,EAAE,iBAAiB,EACzB,gBAAgB,EAAE,OAAO,GAC5B"
+}
