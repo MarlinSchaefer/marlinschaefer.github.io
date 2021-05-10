@@ -1,0 +1,25 @@
+<footer class="main-footer">
+	<ul class="main-footer-list">
+		{% for item in site.data.footer %}
+			<li class="main-footer-list-item">
+				<a href="{{ item.link }}" class="main-footer-nav-link">{{ item.name }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	<ul class="main-footer-list">
+		{% for item in site.data.socials %}
+			<li class="main-footer-social-item">
+				<i class="{{ item.icon }} footer-{{item.id}}-icon footer-social-icon"></i>
+				<a href="{{ item.link }}" class="main-footer-social-link" target="_blanck">
+						{{ item.name }}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+	<div class="main-footer-powered-by">
+		Powered by Jekyll
+	</div>
+	<div class="main-footer-copyright">
+		&copy; Marlin Benedikt Schäfer, 2021
+	</div>
+</footer>

@@ -1,4 +1,16 @@
 - name: Home
   link: /
+- name: Contact
+  link: /contact.html
+- name: Curriculum Vitae
+  link: /cv.html
+- name: Publications
+  link: /publications.html
+- name: Science digest
+  link: /science_digest.html
+- name: Blog
+  link: /blog.html
+- name: Resources
+  link: /resources.html
 - name: About
   link: /about.html

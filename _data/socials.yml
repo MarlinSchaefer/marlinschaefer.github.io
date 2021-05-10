@@ -1,0 +1,16 @@
+- name: Twitter
+  link: https://twitter.com/SchaferMarlin
+  icon: fab fa-twitter-square
+  id: twitter
+- name: Github
+  link: https://github.com/MarlinSchaefer
+  icon: fab fa-github-square
+  id: github
+- name: E-Mail
+  link: mailto:marlin.schaefer@aei.mpg.de
+  icon: fas fa-envelope
+  id: email
+- name: https://orcid.org/0000-0002-6990-0627
+  link: https://orcid.org/0000-0002-6990-0627
+  icon: fab fa-orcid
+  id: orcid

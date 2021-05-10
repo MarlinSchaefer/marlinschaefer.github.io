@@ -1,7 +1,11 @@
-<nav>
-    {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current nav_link"{% else %}class="nav_link"{% endif %}>
-            {{ item.name }}
-        </a>
-    {% endfor %}
+<nav class="main-navigation">
+	<ul class="main-navigation-list">
+	    {% for item in site.data.navigation %}
+	        <li class="main-navigation-list-item">
+	        <a href="{{ item.link }}" {% if page.url == item.link %}class="main-navigation-link main-navigation-current-link"{% else %}class="main-navigation-link main-navigation-link-hover"{% endif %}>
+	            {{ item.name }}
+	        </a>
+	        </li>
+	    {% endfor %}
+    </ul>
 </nav>
