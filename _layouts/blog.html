@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/fonts/fontawesome/css/all.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+        <!--Icons-->
+        <!--TODO Redo icons using https://realfavicongenerator.net/favicon_result?file_id=p1f53disqm26k1ih194v17oi16366#.YJU2BSaxVaQ -->
+        <link rel="shortcut icon" type="image/svg" href="assets/images/logov3.svg">
+    </head>
+    <body>
+        <div id="main-box">
+            {% include header.html %}
+            {% include navigation.html %}
+            <div id="main-content-box">
+                {{ content }}
+            </div>
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

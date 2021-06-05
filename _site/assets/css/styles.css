@@ -84,9 +84,11 @@ a:hover { text-decoration: underline; }
 
 .main-navigation-link-hover { transition-duration: 0.2s; }
 
-.main-navigation-link-hover:hover { background-color: var(--lightgreen); text-decoration: none; }
+.main-navigation-link-hover:hover { /*background-color: var(--lightgreen);*/ background-color: blue; text-decoration: none; }
 
 .main-navigation-current-link { background-color: var(--lightgreen); }
+
+.main-navigation-current-link:hover { background-color: red; text-decoration: none; }
 
 .main-footer { flex: 0 1 auto; margin: 0; padding: 0; width: 100%; background-color: var(--lightgrey); padding-top: 20px; padding-bottom: 20px; padding-left: 10px; border-top: 2px solid var(--darkgrey); color: var(--grey); }
 
@@ -107,5 +109,9 @@ a:hover { text-decoration: underline; }
 .footer-twitter-icon { color: #1da1f2; }
 
 .main-footer-nav-link { color: var(--darkgrey); }
+
+.main-contact-div { padding: 1000px; }
+
+.contact-title { color: red; }
 
 /*# sourceMappingURL=styles.css.map */
