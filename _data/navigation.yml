@@ -1,16 +1,16 @@
 - name: Home
   link: /
 - name: Contact
-  link: /contact.html
+  link: /pages/contact.html
 - name: Curriculum Vitae
-  link: /cv.html
+  link: /pages/cv.html
 - name: Publications
-  link: /publications.html
-- name: Science digest
-  link: /science_digest.html
+  link: /pages/publications.html
+- name: Science Digest
+  link: /pages/science_digest.html
 - name: Blog
-  link: /blog.html
+  link: /pages/blog.html
 - name: Resources
-  link: /resources.html
-- name: About
-  link: /about.html
+  link: /pages/resources.html
+- name: Personal Projects
+  link: /pages/personal_projects.html

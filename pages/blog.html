@@ -1,0 +1,62 @@
+---
+layout: default
+title: Blog
+show_posts: 5
+---
+<div class="blog-main">
+<h1 class="scd-title">Blog posts</h1>
+
+<p class="scd-text">
+    On this page you can find an overview of all my blog posts. They contain small projects and ideas that I thought of. 
+</p>
+
+<h2 class="scd-h2">Recent</h2>
+<ul class="blog-ul">
+{% for post in site.posts limit:page.show_posts %}
+    <li class="blog-li">
+        <a href="{{ post.url }}" class="blog-a">
+            <div>
+                <span class="blog-post-title">{{ post.title }}</span></br>
+                <p class="blog-post-excerpt">
+                    {{ post.excerpt }}
+                </p>
+            </div>
+        </a>
+    </li>
+{% endfor %}
+</ul>
+
+<h2 class="scd-h2">Top</h2>
+<ul class="blog-ul">
+{% for post in site.posts limit:page.show_posts %}
+    <li class="blog-li">
+        <a href="{{ post.url }}" class="blog-a">
+            <div>
+                <span class="blog-post-title">{{ post.title }}</span></br>
+                <p class="blog-post-excerpt">
+                    {{ post.excerpt }}
+                </p>
+            </div>
+        </a>
+    </li>
+{% endfor %}
+</ul>
+
+<h2 class="scd-h2">Categories</h2>
+
+<h2 class="scd-h2">All</h2>
+<ul class="blog-ul">
+{% for post in site.posts %}
+    <li class="blog-li">
+        <a href="{{ post.url }}" class="blog-a">
+            <div>
+                <span class="blog-post-title">{{ post.title }}</span></br>
+                <p class="blog-post-excerpt">
+                    {{ post.excerpt }}
+                </p>
+            </div>
+        </a>
+    </li>
+{% endfor %}
+</ul>
+</div>

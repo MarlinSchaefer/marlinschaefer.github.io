@@ -1,6 +1,24 @@
 .main-contact-div {
-    padding: 1000px;
+    padding: 10px;
 }
 .contact-title {
-    color: red;
+    font-size: 2em;
+    padding-bottom: 10px;
+    
+}
+.contact-body {
+    padding: 0;
+}
+.contact-email {
+    padding-left: 15px;
+}
+.contact-address-header {
+    font-size: 1.5em;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.contact-address-li {
+    padding-left: 15px;
+    padding-bottom: 3px;
 }

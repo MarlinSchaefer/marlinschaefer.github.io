@@ -34,15 +34,13 @@
 	transition-duration: 0.2s;
 }
 .main-navigation-link-hover:hover {
-	/*background-color: var(--lightgreen);*/
-	background-color: blue;
+	background-color: var(--lightgreen);
 	text-decoration: none;
 }
 .main-navigation-current-link {
 	background-color: var(--lightgreen);
 }
 .main-navigation-current-link:hover {
-	background-color: red;
 	text-decoration: none;
 }
 
