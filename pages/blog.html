@@ -10,14 +10,27 @@ show_posts: 5
     On this page you can find an overview of all my blog posts. They contain small projects and ideas that I thought of. 
 </p>
 
-<h2 class="scd-h2">Recent</h2>
+<div class="scd-toc-div">
+    <h2 class="scd-h2 scd-toc-heading">Table of contents</h2>
+    <ul class="scd-toc">
+        <li><a href="#recent">Recent</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#all">List of all Blog-posts</a></li>
+        <li><a href="#categories">Categories</a></li>
+    </ul>
+</div>
+
+<h2 class="scd-h2" id="recent">Recent</h2>
 <ul class="blog-ul">
 {% for post in site.posts limit:page.show_posts %}
     <li class="blog-li">
         <a href="{{ post.url }}" class="blog-a">
-            <div>
+            <div class="blog-post-container">
                 <span class="blog-post-title">{{ post.title }}</span></br>
                 <p class="blog-post-excerpt">
+                    {% if post.feature_image %}
+                        <img src="{{ post.feature_image | absolute_url }}" class="blog-feature-img" alt="{{ post.feature_image }}">
+                    {% endif %}
                     {{ post.excerpt }}
                 </p>
             </div>
@@ -26,14 +39,17 @@ show_posts: 5
 {% endfor %}
 </ul>
 
-<h2 class="scd-h2">Top</h2>
+<h2 class="scd-h2" id="featured">Featured</h2>
 <ul class="blog-ul">
 {% for post in site.posts limit:page.show_posts %}
     <li class="blog-li">
         <a href="{{ post.url }}" class="blog-a">
-            <div>
+            <div class="blog-post-container">
                 <span class="blog-post-title">{{ post.title }}</span></br>
                 <p class="blog-post-excerpt">
+                    {% if post.feature_image %}
+                        <img src="{{ post.feature_image | absolute_url }}" class="blog-feature-img" alt="{{ post.feature_image }}">
+                    {% endif %}
                     {{ post.excerpt }}
                 </p>
             </div>
@@ -42,16 +58,17 @@ show_posts: 5
 {% endfor %}
 </ul>
 
-<h2 class="scd-h2">Categories</h2>
-
-<h2 class="scd-h2">All</h2>
+<h2 class="scd-h2" id="all">All</h2>
 <ul class="blog-ul">
 {% for post in site.posts %}
     <li class="blog-li">
         <a href="{{ post.url }}" class="blog-a">
-            <div>
+            <div class="blog-post-container">
                 <span class="blog-post-title">{{ post.title }}</span></br>
                 <p class="blog-post-excerpt">
+                    {% if post.feature_image %}
+                        <img src="{{ post.feature_image | absolute_url }}" class="blog-feature-img" alt="{{ post.feature_image }}">
+                    {% endif %}
                     {{ post.excerpt }}
                 </p>
             </div>
@@ -59,4 +76,6 @@ show_posts: 5
     </li>
 {% endfor %}
 </ul>
+
+<h2 class="scd-h2" id="categories">Categories</h2>
 </div>

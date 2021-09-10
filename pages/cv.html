@@ -3,5 +3,6 @@ layout: default
 title: CV Marlin Schäfer
 ---
 <div class="cvdiv">
-    <iframe src="{{ "assets/data/cv.pdf" | absolute_url }}#view=FitV" type="application/pdf" class="cvpdf"></iframe>
+    <!-- <iframe src="{{ "assets/data/cv.pdf" | absolute_url }}#view=FitV" type="application/pdf" class="cvpdf"></iframe> -->
+    <iframe src="{{ "assets/js/pdf_view/web/viewer.html" | absolute_url }}?file={{ "assets/data/cv.pdf" | absolute_url }}" type="application/pdf" class="cvpdf"></iframe>
 </div>

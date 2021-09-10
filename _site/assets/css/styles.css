@@ -156,7 +156,7 @@ a:hover { text-decoration: underline; }
 
 .blog-li { margin-top: 4px; padding: 5px; border: 2px solid var(--grey); border-radius: 5px; transition: top left ease-out 0.5s; z-index: 0; position: relative; }
 
-.blog-li:hover { /*Animate this button in that case*/ top: -2px; left: -2px; }
+.blog-li:hover { top: -2px; left: -2px; box-shadow: 2px 2px 2px black; }
 
 .blog-a { text-decoration: none; color: var(--darkgrey); }
 
@@ -165,5 +165,9 @@ a:hover { text-decoration: underline; }
 .blog-post-title { font-weight: bold; padding-bottom: 3px; }
 
 .blog-post-excerpt { padding-left: 3px; }
+
+.blog-feature-img { height: 80px; float: right; }
+
+.blog-post-container { min-height: 100px; }
 
 /*# sourceMappingURL=styles.css.map */

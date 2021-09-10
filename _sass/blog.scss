@@ -29,9 +29,9 @@
     position: relative;
 }
 .blog-li:hover {
-    /*Animate this button in that case*/
     top: -2px;
     left: -2px;
+    box-shadow: 2px 2px 2px black;
 }
 .blog-a {
     text-decoration: none;
@@ -46,4 +46,11 @@
 }
 .blog-post-excerpt {
     padding-left: 3px;
+}
+.blog-feature-img {
+    height: 80px;
+    float: right;
+}
+.blog-post-container {
+    min-height: 100px;
 }
