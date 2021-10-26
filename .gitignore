@@ -1,3 +1,5 @@
 .sublime-project.sublime-workspace
 _site/
 assets/fonts
+
+!assets/fonts/fontawesome/*
