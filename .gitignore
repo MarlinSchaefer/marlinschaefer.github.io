@@ -1,5 +1,7 @@
 .sublime-project.sublime-workspace
 _site/
 assets/fonts
+posts_backup/
+.jekyll-cache/
 
 !assets/fonts/fontawesome/*

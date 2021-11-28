@@ -1,5 +1,5 @@
 - name: About
-  link: /about.html
+  link: /pages/about.html
   type: nav
 - name: Contact
   link: /pages/contact.html
