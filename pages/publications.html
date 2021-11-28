@@ -2,4 +2,40 @@
 layout: default
 title: Publications
 ---
-My publications
+<div class="main-div">
+    <h1 class="page-title">
+        Publications
+    </h1>
+    <div class="publications-body">
+        <ul class="publications-list">
+            {% assign yearsSorted = site.data.publications | group_by: "year" | sort: "name" %}
+
+            {% for x in yearsSorted reversed %}
+                {% assign monthsSorted = x.items | group_by: "month" | sort: "name" %}
+                {% for y in monthsSorted reversed %}
+                    {% assign daysSorted = y.items | group_by: "day" | sort: "name" %}
+                    {% for z in daysSorted reversed %}
+                        {% for item in z.items reversed %}
+                            <div class="text">
+                                <li class="publications-publication">
+                                    <ul>
+                                        <li><a href="{{ item.link }}" target="blank" class="publications-pub-title">{{ item.title }}</a></li>
+                                        <li class="publications-minor">Authors: {{ item.authors }}</li>
+                                        <li class="publications-minor">First published: {{ item.day }}.{{ item.month }}.{{ item.year }}</li>
+                                        <li class="publications-minor">Link: <a href="{{ item.link }}" target="blank">{{ item.link }}</a></li>
+                                        <li class="publications-minor">
+                                            Abstract:
+                                            <p class="publications-abstract" style="margin-top: 0">
+                                                {{ item.abstract }}
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>

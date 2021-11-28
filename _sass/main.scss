@@ -58,6 +58,7 @@ a:hover{
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .home-profile-pic {
     width: 200px;
@@ -112,4 +113,23 @@ a:hover{
 }
 .home-socials-link {
     color: var(--darkgrey);
+}
+
+/*General style defintions*/
+.main-div {
+    padding: 20px;
+    color: var(--darkgrey);
+}
+.page-title {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+.text {
+    padding-left: 15px;
+    line-height: 1.6;
+    font-size: 1em;
+}
+.text p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }

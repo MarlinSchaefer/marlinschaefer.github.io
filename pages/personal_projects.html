@@ -2,28 +2,115 @@
 layout: default
 title: Personal projects
 ---
-<h1>Personal projects</h1>
-<p>
-    Throughout my years I've started a few larger scale projects. Some of these and their progress are described below. I also often think about smaller questions and project ideas. A few are documented in my <a href="/pages/blog.html">blog posts</a>.
-</p>
-<div class="scd-toc-div">
-    <h2 class="scd-h2 scd-toc-heading">Table of contents</h2>
-    <ul class="scd-toc">
-        <li><a href="#website">Website</a></li>
-        <li><a href="#pytrest">PyTrest</a></li>
-        <li><a href="#todolist">ToDo list app</a></li>
-    </ul>
+<div class="main-div">
+    <h1 class="page-title">Personal projects</h1>
+    <div class="text">
+    <p>
+        Throughout my years I've started a few larger scale projects. Some of these and their progress are described below. I also often think about smaller questions and project ideas. A few are documented in my <a href="/pages/blog.html">blog posts</a>.
+    </p>
+    </div>
+    <div class="scd-toc-div">
+        <h2 class="scd-h2 scd-toc-heading">Table of contents</h2>
+        <ul class="scd-toc">
+            <li><a href="#website">Website</a></li>
+            <li><a href="#pytrest">PyTrest</a></li>
+            <li><a href="#todolist">ToDo list app</a></li>
+        </ul>
+    </div>
+
+    <h2 id="website" class="scd-h2">Website</h2>
+    <div class="text">
+        <p>
+            I've decided to create a personal website after reading a
+            paper by Emily Moravec summarizing different choices one can
+            make along the way. If you want to have a read of the paper
+            yourself, you can download it from arXiv <a href="https://arxiv.org/abs/2012.08553" target="blank">here</a>
+            or access the published version <a href="https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.3847%2F25c2cfeb.53f6dcad&v=e73115b6" target="blank">here</a>.
+            Below I will describe my way to building this website and
+            some choices I made along the way.
+        </p>
+        <p>
+            The last time I had done any "web-development" was more than
+            10 years ago for a small school project. Back then we used
+            HTML4 if I remember correctly and I re-did the entire site
+            the night before we had to hand it in. You may be able to 
+            imagine how much of that knowledge was still with me. On top
+            of the knowledge lost to the never-stopping passage of time
+            we had never talked about web-hosting and I'm not sure to
+            which degree we had worked with CSS back then. Therefore, 
+            the initial learning curve was rather steep. And I'm by no
+            means a professional by now. So if you find any problems on
+            this website, please get in touch and let me know. You can
+            find my contact information <a href="/pages/contact.html">here</a>.
+        </p>
+        <p>
+            My first choice was considering where I wanted to host the
+            website, as that would directly impact the way I would 
+            actually build it. I did not want to spend a lot of
+            money on this website, as this felt more like an experiment 
+            and also because the traffic would most certainly be low. 
+            Following Figure 2 of the paper mentioned above and avoiding
+            to use my institute as a host, I chose to use github-pages. 
+            I wanted to avoid using my institute simply for the reason 
+            that I will most probably shift employers after completing
+            my PhD. If the website was hosted by the institute, I 
+            would have to remember to copy it over to a new host then. 
+            Using an external host removes this source of error.
+        </p>
+        <p>
+            Choosing github-pages as a hosting service also meant that I
+            would have to use <a href="https://jekyllrb.com/" target="blank">Jekyll</a>
+            to build the website. Jekyll is an automated tool to build
+            static websites, i.e. websites which are not rendered on the
+            server on request. It simplifies the process by allowing the
+            user to specify templates that govern the overall look of
+            the website. The templates may then be adjusted to create a
+            personalized look. It also allows to make use of a few
+            automated tools to loop over files and build the website
+            from its contents. This means for instance that building a
+            menu is relatively simple.
+        </p>
+        <p>
+            After having chosen Jekyll to build the website it would in
+            theory have been as simple as choosing a template (like 
+            <a href="https://mmistakes.github.io/minimal-mistakes/" target="blank">Minimal mistakes</a>)
+            and filling it with content. However, I had no (real) 
+            experience with web development. And I saw this website as
+            an opportunity to change that. So instead of using a
+            ready-to-use template, I decided to build this website from
+            the ground up. Not because it is efficient (I think I could
+            have created this website in 10 hours instead of 50-60) but
+            because I see it as a learning experience. Looking back at
+            it now I can already see many places where it is
+            inefficiently coded and where it is actually hard to
+            understand what happens. But I'm proud of having gotten it
+            into a function state.
+        </p>
+    </div>
+
+    <h2 id="pytrest" class="scd-h2">PyTrest</h2>
+    <div class="text">
+        <p>
+            PyTrest is a Python package that I created to test stock
+            market trading strategies and build a virtual depot to do
+            paper trading in. When I started getting into the stock market
+            I wanted to utilize my data analysis background and see if I
+            was able to play the game of statistics to come up with some
+            efficient trading strategies. My main problem was that
+            most off-the-shelf libraries did not consider comission
+            costs and taxes, which are a major factor (at least with 
+            small capital). Also, for some of these libraries the syntax
+            seemed so obscure that it was difficult to impossible to get
+            the raw data into the library. To resolve these issues I
+            decided to write my own library. I also wanted to use this
+            experience to learn about library design and package
+            architecture. If you want to have a look at the source code
+            you can find it on my github page <a href="https://github.com/MarlinSchaefer/PyTrest" target="blank">here</a>.
+        </p>
+    </div>
+
+    <h2 id="todolist" class="scd-h2">ToDo List App</h2>
+    <div class="text">
+        
+    </div>
 </div>
-
-<h2 id="website">Website</h2>
-
-<h2 id="pytrest">PyTrest</h2>
-
-<h2 id="todolist">ToDo List App</h2>
-Below a list of possible personal projects
-<ul style="list-style: decimal;">
-    <li>This websit</li>
-    <li>PyTrest</li>
-    <li>ToDo list app</li>
-    <li>Hint to Blog posts with multiple small projects</li>
-</ul>
