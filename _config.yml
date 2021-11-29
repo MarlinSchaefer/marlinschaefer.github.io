@@ -1,5 +1,23 @@
 url: https://www.marlin-schaefer.me
 enforce_ssl: www.marlin.schaefer.me
 
+title: "Marlin Schäfer"
+tagline: "The personal website of Marlin Schäfer."
+description: "The personal website of Marlin Benedikt Schäfer. It contains important information about myself as well as some explanation of my research. There is also a blog."
+author: "Marlin Benedikt Schäfer"
+logo: /assets/images/logov3.svg
+locale: en_US
+
+twitter:
+  username: SchaferMarlin
+  card: summary
+social:
+  name: Marlin Schäfer
+  links:
+    - https://twitter.com/SchaferMarlin
+    - https://github.com/MarlinSchaefer
+    - https://orcid.org/0000-0002-6990-0627
+
 plugins:
   - jekyll-toc
+  - jekyll-seo-tag
