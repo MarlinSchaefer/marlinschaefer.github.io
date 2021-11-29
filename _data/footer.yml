@@ -4,3 +4,6 @@
 - name: Contact
   link: /pages/contact.html
   type: nav
+- name: Sitemap
+  link: "https://www.marlin-schaefer.me/sitemap.xml"
+  type: nav
