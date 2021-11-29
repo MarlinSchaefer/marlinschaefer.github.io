@@ -19,6 +19,5 @@ social:
     - https://orcid.org/0000-0002-6990-0627
 
 plugins:
-  - jekyll-toc
   - jekyll-seo-tag
   - jekyll-sitemap
