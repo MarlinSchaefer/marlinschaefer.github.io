@@ -9,9 +9,8 @@
 	<ul class="main-footer-list">
 		{% for item in site.data.socials %}
 			<li class="main-footer-social-item">
-				<i class="{{ item.icon }} footer-{{item.id}}-icon footer-social-icon"></i>
 				<a href="{{ item.link }}" class="main-footer-social-link" target="_blanck">
-						{{ item.name }}
+					<i class="{{ item.icon }} footer-{{item.id}}-icon footer-social-icon"></i>{{ item.name }}
 				</a>
 			</li>
 		{% endfor %}

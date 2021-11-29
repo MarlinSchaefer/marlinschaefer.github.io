@@ -45,9 +45,11 @@
 }
 .footer-social-icon {
 	display: inline-block;
-	font-size: 1.2em !important;
+	font-size: 1.5em !important;
 	aria-hidden: "true";
 	vertical-align: middle;
+	color: var(--grey);
+	padding-right: 0.25em;
 }
 .footer-twitter-icon {
 	color: #1da1f2;
