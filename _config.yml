@@ -1,2 +1,5 @@
+url: https://www.marlin-schaefer.me
+enforce_ssl: www.marlin.schaefer.me
+
 plugins:
   - jekyll-toc
