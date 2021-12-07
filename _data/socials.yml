@@ -14,3 +14,7 @@
   link: https://orcid.org/0000-0002-6990-0627
   icon: fab fa-orcid
   id: orcid
+- name: LinkedIn
+  link: https://www.linkedin.com/in/marlin-benedikt-sch%C3%A4fer-80452b227/
+  icon: fab fa-linkedin
+  id: linkedin
