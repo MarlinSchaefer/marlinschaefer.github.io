@@ -1,19 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <link rel="stylesheet" href="/assets/fonts/fontawesome/css/all.css">
-        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-
-        <!--Icons-->
-		<link rel="shortcut icon" type="image/svg" href={{ "assets/images/logov3.svg" | absolute_url }}>
-        <link rel="apple-touch-icon" sizes="180x180" href={{ "assets/images/apple-touch-icon.png" | absolute_url }}>
-        <link rel="manifest" href={{ "assets/images/site.webmanifest" | absolute_url }}>
-        <link rel="mask-icon" href={{ "assets/images/safari-pinned-tab.svg" | absolute_url }} color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+        {% include main_head.html %}
 
         <!-- SEO optimization -->
         {% seo %}

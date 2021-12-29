@@ -1,0 +1,23 @@
+.notebook {
+    color: var(--darkgrey);
+}
+.notebook h1 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+.notebook h2 {
+    font-size: 1.6em;
+    padding-bottom: 6px;   
+}
+.notebook p {
+    padding-left: 15px;
+    line-height: 1.6;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.notebook code {
+    /*background: #f5f2f0;*/
+    background: var(--lightgrey);
+    border-radius: 6px;
+    padding: .2em .4em;
+}

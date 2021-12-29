@@ -3,5 +3,6 @@ _site/
 assets/fonts
 posts_backup/
 .jekyll-cache/
+.ipynb_checkpoints
 
 !assets/fonts/fontawesome/*
